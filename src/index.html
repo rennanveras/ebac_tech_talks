@@ -9,16 +9,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em: <br>
+                <span id="contador" >00h 00h 00m 00s</span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <strong>Localização</strong>
+                        Allianz Parque - Barra Fundo - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <strong>Preço</strong>
+                        Aa partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <strong>Quando</strong>
+                        07/12/2023 às 19h
+                    </li>
+                </ul>
+                <a class="button button--primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend" >
+        <div class="container" >
+            <div class="event__details" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore dolorum temporibus alias in earum reiciendis doloremque perferendis quaerat accusantium pariatur at officiis ratione harum iste sequi tempore. Iste, sunt.
+                    Quidem suscipit deleniti distinctio rerum esse modi impedit omnis sint veritatis officiis, voluptas dolores inventore, in dolore tenetur? Reprehenderit ipsam officia fugit quisquam odit adipisci sunt, molestiae rem ab velit.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end" data-aos="fade-left" data-aos-duration="2000">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container"  >
+            <div class="event__details" data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="event__details__title">UI-UX</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore dolorum temporibus alias in earum reiciendis doloremque perferendis quaerat accusantium pariatur at officiis ratione harum iste sequi tempore. Iste, sunt.
+                    Quidem suscipit deleniti distinctio rerum esse modi impedit omnis sint veritatis officiis, voluptas dolores inventore, in dolore tenetur? Reprehenderit ipsam officia fugit quisquam odit adipisci sunt, molestiae rem ab velit.
+                </p>
+            </div>
+            <img class="event__image" src="images/ui-ux.png" alt="UI-UX" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container">
+            <div class="event__details" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="event__details__title">Ciencia de dados</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore dolorum temporibus alias in earum reiciendis doloremque perferendis quaerat accusantium pariatur at officiis ratione harum iste sequi tempore. Iste, sunt.
+                    Quidem suscipit deleniti distinctio rerum esse modi impedit omnis sint veritatis officiis, voluptas dolores inventore, in dolore tenetur? Reprehenderit ipsam officia fugit quisquam odit adipisci sunt, molestiae rem ab velit.
+                </p>
+            </div>
+            <img class="event__image" src="images/data.png" alt="ciencia de dados" data-aos="fade-left" data-aos-duration="2000">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container"  >
+            <div class="event__details" data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="event__details__title">Back end</h2>
+                <p class="event__details__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore dolorum temporibus alias in earum reiciendis doloremque perferendis quaerat accusantium pariatur at officiis ratione harum iste sequi tempore. Iste, sunt.
+                    Quidem suscipit deleniti distinctio rerum esse modi impedit omnis sint veritatis officiis, voluptas dolores inventore, in dolore tenetur? Reprehenderit ipsam officia fugit quisquam odit adipisci sunt, molestiae rem ab velit.
+                </p>
+            </div>
+            <img class="event__image" src="images/backend.png" alt="Back end" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
